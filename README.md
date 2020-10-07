@@ -22,10 +22,10 @@ The three main components of this system are NodeMcu, ultrasonic sensor and mois
 ### 2. Web-Interface System-
 The web interface system is regarding the app that keeps the authorities informed on the status of the trash bin. The user can use the app and will be given access to the app once the device ID of the user is registered in the app. The information collected from the sensors are linked to the app with the help of NodeMcu. The user can login to the app to check the status of the trash bin. The authority-user interface deals with the interaction of user and authority. When the waste overflows the bin, an alert message is received by the authorities and they can come and collect the waste from the waste bin.
 
-## Description:-
-### 1. Node MCU: -
+## Description-
+### 1. Node MCU-
 The NodeMCU is an open-source firmware and development kit that helps you to Prototype your IOT product within a few 'C' codes. NodeMCU it is like Arduino Hardware with an Input Output built in the Board itself, it has also a Wi-Fi built-into connect directly to internet to control your things online for digital network applications, which facilitates developers to code running on the Board, Greatly speed up your Internet of Things application development process. The Development Board base on ESP8266 Chip, integrated GPIO(General Purpose Input Output), PWM(Pulse with Modulation),IIC(Interconnected Integrated Circuit), 1-Wire and ADC all in one board to power up your development board in a fastest way combined with the NodeMCU Firmware.
-### 2. Ultrasonic sensor:-
+### 2. Ultrasonic sensor-
 The ultrasonic sensor is a device that is used to measure the distance to an object with the help of sound waves. It sends out a high frequency sound pulse and determines how long it takes for the echo reflect back to it. The sensor has got a transmitter and a receiver on it to transmit-receive the sound pulse. The ultrasonic sensor can detect even the transparent objects as it can reflect off glass and liquid as well. It is resistant to mist and dirt. It also has the ability to detect complex shapes.
 
 ### Interfacing Diagram-
