@@ -25,22 +25,36 @@ The web interface system is regarding the app that keeps the authorities informe
 ## Description-
 ### 1. Node MCU-
 The NodeMCU is an open-source firmware and development kit that helps you to Prototype your IOT product within a few 'C' codes. NodeMCU it is like Arduino Hardware with an Input Output built in the Board itself, it has also a Wi-Fi built-into connect directly to internet to control your things online for digital network applications, which facilitates developers to code running on the Board, Greatly speed up your Internet of Things application development process. The Development Board base on ESP8266 Chip, integrated GPIO(General Purpose Input Output), PWM(Pulse with Modulation),IIC(Interconnected Integrated Circuit), 1-Wire and ADC all in one board to power up your development board in a fastest way combined with the NodeMCU Firmware.
+<p align="center">
+    <img src="Images/nodemcu_pins.png" width = 500>
+</p>
+<p align="center">Source: NodeMCU_Pins.png</p>
+
 ### 2. Ultrasonic sensor-
 The ultrasonic sensor is a device that is used to measure the distance to an object with the help of sound waves. It sends out a high frequency sound pulse and determines how long it takes for the echo reflect back to it. The sensor has got a transmitter and a receiver on it to transmit-receive the sound pulse. The ultrasonic sensor can detect even the transparent objects as it can reflect off glass and liquid as well. It is resistant to mist and dirt. It also has the ability to detect complex shapes.
+<p align="center">
+    <img src="Images/ultrasonic sensor.jpg">
+</p>
+<p align="center">Source: Images/ultrasonic sensor.jpg</p>
 
 ### Interfacing Diagram-
 The circuit connections are made as follows: 
 - The HC-SR04 sensor attached to the board 
-- The sensor Vcc is connected to the NodeMCU +5.0 V 
+- The sensor Vcc is connected to the NodeMCU Vin 
 - The sensor GND is connected to the NodeMCU GND 
-- The sensor Trigger Pin is connected to the NodeMCU Digital I/O D0 (Sensor1) and D4 (Sensor 2)
-- The sensor Echo Pin is connected to the NodeMCU Digital I/O D1 (Sensor 1) and D3 (Sensor 2)
+- The sensor Trigger Pin is connected to the NodeMCU Digital I/O D4 (Sensor1) and D2 (Sensor 2)
+- The sensor Echo Pin is connected to the NodeMCU Digital I/O D5 (Sensor 1) and D0 (Sensor 2)
+
 
 ## Moisture sensor- 
 Soil moisture is basically the content of water present in soil. This can be measured using a soil moisture sensor which consists of two conducting probes that act as a probe. It can measure the moisture content in the soil based on the change in resistance between the two conducting plates.
 
 ### Interfacing Diagram-
-Connections are based on the analog mode of the moisture sensor Analog pin of the sensor is connected to pin A0 of the NodeMCU The sensor Vcc is connected to +3.3 V The GND of the sensor id given to the GND of the NodeMCU.
+Connections are based on the analog mode of the moisture sensor. The Connections are as follows:
+- Analog pin of the sensor is connected to pin A0 of the NodeMCU 
+- The sensor Vcc is connected to +3.3 V
+- The GND of the sensor id given to the GND of the NodeMCU.
+
 
 ## Conclusion
 A proper waste management system is important for the development of any country. For a populated country like India, waste management is an important concern. We are trying to give an effective solution to the waste management issue by our project named smart bin.
