@@ -29,7 +29,7 @@ The NodeMCU is an open-source firmware and development kit that helps you to Pro
 <p align="center">
     <img src="Images/nodemcu_pins.png" width = 500>
 </p>
-<p align="center">Source:<a href="https://github.com/irohan98/Smart-Trash/blob/main/Images/NodetoUltra.png">NodeMCU_Pins</a></p>
+<p align="center">Source: <a href="https://github.com/irohan98/Smart-Trash/blob/main/Images/NodetoUltra.png">NodeMCU_Pins</a></p>
 
 
 ### 2. Ultrasonic sensor-
