@@ -36,7 +36,7 @@ The web interface system is regarding the app that keeps the authorities informe
 
 ## Description-
 ### 1. Node MCU-
-The NodeMCU is an open-source firmware and development kit that helps you to Prototype your IOT product within a few 'C' codes. NodeMCU it is like Arduino Hardware with an Input Output built in the Board itself, it has also a Wi-Fi built-into connect directly to internet to control your things online for digital network applications, which facilitates developers to code running on the Board, Greatly speed up your Internet of Things application development process. The Development Board base on ESP8266 Chip, integrated GPIO(General Purpose Input Output), PWM(Pulse with Modulation),IIC(Interconnected Integrated Circuit), 1-Wire and ADC all in one board to power up your development board in a fastest way combined with the NodeMCU Firmware.
+The NodeMCU is an open-source firmware and development kit that helps you to Prototype your IOT product within a few 'C' codes. NodeMCU it is like Arduino Hardware with an Input Output built in the Board itself, it has also a Wi-Fi built-into connect directly to internet to control your things online for digital network applications, which facilitates developers to code running on the Board, Greatly speed up your Internet of Things application development process. The Development Board base on ESP8266 Chip, integrated GPIO(General Purpose Input Output), PWM(Pulse with Modulation), IIC(Interconnected Integrated Circuit), 1-Wire and ADC all in one board to power up your development board in a fastest way combined with the NodeMCU Firmware.
 <p align="center">
     <img src="Images/nodemcu_pins.png" width = 500>
 </p>
