@@ -1,20 +1,21 @@
-# Smart-Trash
+# Smart-Trash Bin
 B.Tech Mini Project (6th Semester)
 ## Abstract
 We often see that the garbage bins placed at public places overflow, creating unhygienic conditions. Most of the people are reluctant to dump the waste properly in the waste bins. Due to this the waste pile up near the bin and also produces bad odor. Improper waste management leads to environment pollution. The ultrasonic sensor attached to the bin will check the status of the bin i.e., whether the bin is full or not. This project proposes a smart waste management system that alerts the municipal authorities by displaying a flash message on respective mobile phones.
 ## Introduction
-Waste management is one of the primary problems that the world faces irrespective of the case of developed or developing country. Although some action has been taken from the government against this, poor management of waste has led to the emission of greenhouse gases. Hazardous wastes pollute the environment in various ways. Even before such wastes are safely disposed of, they pollute the air, water, soil and also pose a threat to human life. The key issue in the waste management is that the garbage bin at public places gets overflowed well in advance before the commencement of the next cleaning process. It, in turn, leads to various hazards such as bad odor & ugliness to that place which may be the root cause for the spread of various diseases
+Waste management is one of the primary problems that the world faces in both a developed or developing country. Although some action has been taken from the government against this, poor management of waste has led to the emission of greenhouse gases. Hazardous wastes pollute the environment in various ways. Even before such wastes are safely disposed of, they pollute the air, water, soil and also pose a threat to human life. The key issue in the waste management is that the garbage bin at public places gets overflowed well in advance before the commencement of the next cleaning process. It, in turn, leads to various hazards such as bad odor & ugliness to that place which may be the root cause for the spread of various diseases
 To avoid all such hazardous scenario and maintain public cleanliness and health this work is mounted on a smart garbage system. The main theme of the work is to develop a smart intelligent garbage alert system for a proper garbage management. This project proposes a smart alert system for garbage clearance by giving an alert signal to the municipal authorities for instant cleaning of dustbin with proper verification based on the level of garbage filling.
 ## Components Used
-- NodeMcu
+- NodeMcu Board
 - Breadboard
 - Jumper wires
-- Arduino Uno
+- 5V Supply
 - Buzzer
 - LED
 - Moisture sensor
-- Ultrasonic sensor
-- 1k Resistors
+- Ultrasonic sensor (HC-SR04)
+- 1k Ohm Resistors
+- 470 Ohm Resistors
 ## Module Description
 The proposed system has two modules. The first one is E-monitoring system and the next is app interface system. The E-monitoring system deals with the hardware section whereas app interface system is the software part of the project.
 ### 1. E-monitoring System-
@@ -66,7 +67,7 @@ Connections are based on the analog mode of the moisture sensor. The Connections
 
 ### Complete Circuit Diagram-
 <p align="center">
-    <image src="Images/All_zoomout.png" width=600>
+    <image src="Images/All_zoomout.png" width=800>
 </p>
 <p align="center">Source: Images/All_zoomout.png</p>
 
