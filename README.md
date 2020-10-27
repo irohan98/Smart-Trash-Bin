@@ -8,6 +8,12 @@ We often see that the garbage bins placed at public places overflow, creating un
 Waste management is one of the primary problems that the world faces in both a developed or developing country. Although some action has been taken from the government against this, poor management of waste has led to the emission of greenhouse gases. Hazardous wastes pollute the environment in various ways. Even before such wastes are safely disposed of, they pollute the air, water, soil and also pose a threat to human life. The key issue in the waste management is that the garbage bin at public places gets overflowed well in advance before the commencement of the next cleaning process. It, in turn, leads to various hazards such as bad odor & ugliness to that place which may be the root cause for the spread of various diseases
 To avoid all such hazardous scenario and maintain public cleanliness and health this work is mounted on a smart garbage system. The main theme of the work is to develop a smart intelligent garbage alert system for a proper garbage management. This project proposes a smart alert system for garbage clearance by giving an alert signal to the municipal authorities for instant cleaning of dustbin with proper verification based on the level of garbage filling.
 
+<p align="center" width="100%">
+    <img width ="50%" src="Images/Smart_Bins_Smart_City.png">
+    <img width ="30%" src="Images/9.14.2017-CBI-Walmart-Trash-Can-Patent-Cycle.png">
+</p>
+<p align="center"> <b>Description:</b> Illustration of the Smart City</p>
+
 ## Components Used
 - NodeMcu Board
 - Breadboard
