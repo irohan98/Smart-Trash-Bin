@@ -22,14 +22,18 @@ int distance1;
 long duration2;
 int distance2; 
 const int sensor_pin = A0;  /* Connect Soil moisture analog sensor pin to A0 of NodeMCU */
-int outputvalue=0 ;
+int outputvalue=0;
 float moisture_percentage;
 int LED = 12; //D6
-#define DHTPIN 0          // D3
+
+//---------------------- Use the code below, if you want to add a Humidity sensor to the entire circuit and measure the temperature and humidity-------------------------
+
+/*#define DHTPIN 0 // D3
 #define DHTTYPE DHT11   
 DHT dht(DHTPIN, DHTTYPE);
 BlynkTimer timer;
 
+// --------------------------------------------------DHT Temp and Humidity Sensor------------------------------------------------------
 void sendSensor()
 {
   float h = dht.readHumidity();
@@ -45,16 +49,19 @@ void sendSensor()
   Blynk.virtualWrite(V6, h);
   if(t>34)
   {
-     Blynk.email("irohan90839@gmail.com", "Temperature Alert", "Temperature over 34C!");
+     Blynk.email("Mail_ID", "Temperature Alert", "Temperature over 34C!");
     delay(2000);
     }
   else
   {
     delay(2000);
-    }
-    
+  }
 }
+*/
+// -----------------------------------------------------------------------------------------------------------------------------------
 
+
+// --------------------------------------------------Main Code------------------------------------------------------
 void setup() {
   Serial.begin(115200);
   pinMode(trigPin1, OUTPUT); // Sets the trigPin as an Output
@@ -69,13 +76,13 @@ void setup() {
 
   Blynk.begin(auth, WIFI_SSID ,WIFI_PASSWORD );
   // You can also specify server:
-  //Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 8442);
-  //Blynk.begin(auth, ssid, pass, IPAddress(192,168,1,100), 8442);
+  // Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 8442);
+  // Blynk.begin(auth, ssid, pass, IPAddress(192,168,1,100), 8442);
  
-  dht.begin();
+  // dht.begin();
  
   // Setup a function to be called every second
-  timer.setInterval(1000L, sendSensor);
+  // timer.setInterval(1000L, sendSensor);
 }
 
 void loop() {
@@ -90,11 +97,10 @@ void loop() {
 }
 
 
-   
-
+//------------------------Funtion to connect to the WiFi--------------------------------------- 
 
 void connectToWifi(){
-  // funtion to connect to WiFi
+  
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   Serial.print("\n\nconnecting");
   while (WiFi.status() != WL_CONNECTED) {
@@ -107,8 +113,8 @@ void connectToWifi(){
   digitalWrite(LED, HIGH);
 }
 
-   
-  
+
+//------------------------ Ultrasonic Sensor 1--------------------------------------- 
 
 void ultra1(){
   // Clears the trigPin1
@@ -129,6 +135,7 @@ distance1 = (duration1)*0.034/2;
 Serial.print("Distance1(Dry): ");
 Serial.println(distance1);
 delay(1000);
+  
 /* Loop for an incoming message if needed.
  if(distance1<10)
 {
@@ -141,21 +148,23 @@ delay(1000);
     pinMode(LED,LOW);
   }
   delay(500);*/
+  
 if(distance1<10)
 {
    Blynk.notify("Bin(A) is full,Clear trash");
   delay(1000);
-
 }
-
 else
 {
-  
   delay(1000);
 }
-
+  
 }
-void ultra2(){
+
+//------------------------ Ultrasonic Sensor 2--------------------------------------- 
+
+void ultra2()
+{
   // Clears the trigPin2
 digitalWrite(trigPin2, LOW);
 delayMicroseconds(2);
@@ -174,6 +183,7 @@ distance2 = (duration2)*0.034/2;
 Serial.print("Distance2(Wet): ");
 Serial.println(distance2);
 delay(1000);
+  
 if(distance2<15)
 {
   Blynk.notify("Bin(B) is full,Clear trash");
@@ -184,7 +194,11 @@ else
   delay(1000);
 }
 }
-void moist(){
+
+//------------------------ Moisture Sensor--------------------------------------- 
+
+void moist()
+{
   moisture_percentage = ( 100.00 - ( (analogRead(sensor_pin)/1023.00) * 100.00 ) );
 
   Serial.print("Soil Moisture(in Percentage) = ");
