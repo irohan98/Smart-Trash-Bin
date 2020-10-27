@@ -33,17 +33,22 @@ The NodeMCU is an open-source firmware and development kit that helps you to Pro
 ### 2. Ultrasonic sensor-
 The ultrasonic sensor is a device that is used to measure the distance to an object with the help of sound waves. It sends out a high frequency sound pulse and determines how long it takes for the echo reflect back to it. The sensor has got a transmitter and a receiver on it to transmit-receive the sound pulse. The ultrasonic sensor can detect even the transparent objects as it can reflect off glass and liquid as well. It is resistant to mist and dirt. It also has the ability to detect complex shapes.
 <p align="center">
-    <img src="Images/ultrasonic sensor.jpg">
+    <img src="Images/Ultrasonic Sensor.png" width = 500>
 </p>
-<p align="center">Source: Images/ultrasonic sensor.jpg</p>
+<p align="center">Source: Images/Ultrasonic Sensor.png</p>
 
 ### Interfacing Diagram-
 The circuit connections are made as follows: 
 - The HC-SR04 sensor attached to the board 
-- The sensor Vcc is connected to the NodeMCU Vin 
+- The sensor Vcc is connected to the NodeMCU Vin (5V supply) 
 - The sensor GND is connected to the NodeMCU GND 
 - The sensor Trigger Pin is connected to the NodeMCU Digital I/O D4 (Sensor1) and D2 (Sensor 2)
 - The sensor Echo Pin is connected to the NodeMCU Digital I/O D5 (Sensor 1) and D0 (Sensor 2)
+**Note: Resistors of values 470 and 1k Ohms are added to protect the sensor from damage**
+<p align="center">
+    <image src="Images/NodetoUltra.png" width=600>
+</p>
+<p align="center">Source: Images/NodetoUltra.png</p>
 
 
 ## Moisture sensor- 
@@ -53,8 +58,21 @@ Soil moisture is basically the content of water present in soil. This can be mea
 Connections are based on the analog mode of the moisture sensor. The Connections are as follows:
 - Analog pin of the sensor is connected to pin A0 of the NodeMCU 
 - The sensor Vcc is connected to +3.3 V
-- The GND of the sensor id given to the GND of the NodeMCU.
+- The GND of the sensor id given to the GND of the NodeMCU
+<p align="center">
+    <image src="Images/Nodetomois.png" width=600>
+</p>
+<p align="center">Source: Images/Nodetomois.png</p>
 
+### Complete Circuit Diagram-
+<p align="center">
+    <image src="Images/All_zoomout.png" width=600>
+</p>
+<p align="center">Source: Images/All_zoomout.png</p>
+
+**Note: Make sure to add an indicator like an LED/Buzzer to any one of the NodeMCU pins for range detection alert or the Wet Waste alert**
+
+Please refer to the code and make appropriate changes to your circuit
 
 ## Conclusion
 A proper waste management system is important for the development of any country. For a populated country like India, waste management is an important concern. We are trying to give an effective solution to the waste management issue by our project named smart bin.
