@@ -12,7 +12,7 @@ To avoid all such hazardous scenario and maintain public cleanliness and health 
 - 5V Supply
 - Buzzer
 - LED
-- Moisture sensor
+- Soil Moisture sensor
 - Ultrasonic sensor (HC-SR04)
 - 1k Ohm Resistors
 - 470 Ohm Resistors
@@ -29,16 +29,17 @@ The NodeMCU is an open-source firmware and development kit that helps you to Pro
 <p align="center">
     <img src="Images/nodemcu_pins.png" width = 500>
 </p>
-<p align="center">Source: NodeMCU_Pins.png</p>
+<p align="center">Source:<a href="https://github.com/irohan98/Smart-Trash/blob/main/Images/NodetoUltra.png">NodeMCU_Pins</a></p>
+
 
 ### 2. Ultrasonic sensor-
 The ultrasonic sensor is a device that is used to measure the distance to an object with the help of sound waves. It sends out a high frequency sound pulse and determines how long it takes for the echo reflect back to it. The sensor has got a transmitter and a receiver on it to transmit-receive the sound pulse. The ultrasonic sensor can detect even the transparent objects as it can reflect off glass and liquid as well. It is resistant to mist and dirt. It also has the ability to detect complex shapes.
 <p align="center">
     <img src="Images/Ultrasonic Sensor.png" width = 500>
 </p>
-<p align="center">Source: Images/Ultrasonic Sensor.png</p>
+<p align="center">Source: <a href="https://github.com/irohan98/Smart-Trash/blob/main/Images/Ultrasonic Sensor.png">Ultrasonic Sensor</a></p>
 
-### Interfacing Diagram-
+### Interfacing Diagram 1-
 The circuit connections are made as follows: 
 - The HC-SR04 sensor attached to the board 
 - The sensor Vcc is connected to the NodeMCU Vin (5V supply) 
@@ -49,13 +50,13 @@ The circuit connections are made as follows:
 <p align="center">
     <image src="Images/NodetoUltra.png" width=600>
 </p>
-<p align="center">Source: Images/NodetoUltra.png</p>
+<p align="center">Source: <a href="https://github.com/irohan98/Smart-Trash/blob/main/Images/NodetoUltra.png">Interfacing Diagram 1</a></p>
 
 
 ## Moisture sensor- 
 Soil moisture is basically the content of water present in soil. This can be measured using a soil moisture sensor which consists of two conducting probes that act as a probe. It can measure the moisture content in the soil based on the change in resistance between the two conducting plates.
 
-### Interfacing Diagram-
+### Interfacing Diagram 2-
 Connections are based on the analog mode of the moisture sensor. The Connections are as follows:
 - Analog pin of the sensor is connected to pin A0 of the NodeMCU 
 - The sensor Vcc is connected to +3.3 V
@@ -63,17 +64,17 @@ Connections are based on the analog mode of the moisture sensor. The Connections
 <p align="center">
     <image src="Images/Nodetomois.png" width=600>
 </p>
-<p align="center">Source: Images/Nodetomois.png</p>
+<p align="center">Source: <a href="https://github.com/irohan98/Smart-Trash/blob/main/Images/Nodetomois.png">Interfacing Diagram 2</a></p>
 
 ### Complete Circuit Diagram-
 <p align="center">
     <image src="Images/All_zoomout.png" width=800>
 </p>
-<p align="center">Source: Images/All_zoomout.png</p>
+<p align="center">Source: <a href="https://github.com/irohan98/Smart-Trash/blob/main/Images/All_zoomout.png">Complete Circuit Diagram</a></p>
 
 **Note: Make sure to add an indicator like an LED/Buzzer to any one of the NodeMCU pins for range detection alert or the Wet Waste alert**
 
-Please refer to the code and make appropriate changes to your circuit
+Please refer to the code and make appropriate changes to your circuit and also check out the [blink app documentation](https://docs.blynk.cc/) to set up the mobile interface for the above project 
 
 ## Conclusion
-A proper waste management system is important for the development of any country. For a populated country like India, waste management is an important concern. We are trying to give an effective solution to the waste management issue by our project named smart bin.
+A proper waste management system is important for the development of any country. For a populated country like India, waste management is an important concern. We are trying to give an effective solution to the waste management issue through this project.
