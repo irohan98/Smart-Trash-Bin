@@ -2,11 +2,11 @@
 B.Tech Mini Project (6th Semester)
 
 ## Abstract
-We often see that the garbage bins placed at public places overflow, creating unhygienic conditions. Most of the people are reluctant to dump the waste properly in the waste bins. Due to this the waste pile up near the bin and also produces bad odor. Improper waste management leads to environment pollution. The ultrasonic sensor attached to the bin will check the status of the bin i.e., whether the bin is full or not. This project proposes a smart waste management system that alerts the municipal authorities by displaying a flash message on respective mobile phones.
+We often see that garbage bins placed at public places overflow, creating unhygienic conditions. Most of the people are reluctant to dump the waste properly in the waste bins. Due to this the waste piles up near the bin and produces bad odor. Improper waste management leads to environment pollution. This project proposes a smart waste management system that alerts the municipal authorities by displaying a flash message on their respective mobile phones. The ultrasonic sensor attached to the bin will check the status of the bin i.e., whether the bin is full or not and alert the authorities to clear the waste.
 
 ## Introduction
-Waste management is one of the primary problems that the world faces in both a developed or developing country. Although some action has been taken from the government against this, poor management of waste has led to the emission of greenhouse gases. Hazardous wastes pollute the environment in various ways. Even before such wastes are safely disposed of, they pollute the air, water, soil and also pose a threat to human life. The key issue in the waste management is that the garbage bin at public places gets overflowed well in advance before the commencement of the next cleaning process. It, in turn, leads to various hazards such as bad odor & ugliness to that place which may be the root cause for the spread of various diseases
-To avoid all such hazardous scenario and maintain public cleanliness and health this work is mounted on a smart garbage system. The main theme of the work is to develop a smart intelligent garbage alert system for a proper garbage management. This project proposes a smart alert system for garbage clearance by giving an alert signal to the municipal authorities for instant cleaning of dustbin with proper verification based on the level of garbage filling.
+Waste management is one of the primary problems that the world faces in both a developed or a developing country. Although some actio has been taken from the government against this, poor management of waste has led to the emission of greenhouse gases. Hazardous wastes pollute the environment in various ways. Even before such wastes are safely disposed of, they pollute the air, water, soil and also pose a threat to humanity. The key issue in waste management is that the garbage bins at public places get filled well in advance before the commencement of the next cleaning process. It leads to various hazards such as bad odor & ugliness to that place which may be the root cause for the spread of various diseases
+To avoid all such hazardous scenario and maintain public cleanliness and health this work is mounted on a smart garbage system. The main theme of the work is to develop a smart and intelligent garbage alert system for proper garbage management. This project also proposes an alert system for garbage clearance by sending an alert signal to the municipal authorities for instant cleaning of dustbin with proper verification based on the level of garbage filling.
 
 <p align="center" width="100%">
     <img width ="50%" src="Images/Smart_Bins_Smart_City.png">
@@ -27,12 +27,13 @@ To avoid all such hazardous scenario and maintain public cleanliness and health 
 - 470 Ohm Resistors
 
 ## Module Description
-The proposed system has two modules. The first one is E-monitoring system and the next is app interface system. The E-monitoring system deals with the hardware section whereas app interface system is the software part of the project.
+The proposed system has two modules. The first one is E-monitoring system and the next one is the App Interface system. The E-monitoring system deals with the hardware section and the App Interface system is focussed on the software part of the project.
+
 ### 1. E-monitoring System-
-The three main components of this system are NodeMcu, ultrasonic sensor and moisture sensor. The ultrasonic sensor is used to determine if the waste bin is full or not. If the bin is full a flash message is displayed on the website. The motion sensor detects whenever waste is deposited in the bin and passes this information to NodeMcu. The NodeMcu is used to link all the information collected from the ultrasonic sensor to the app.
+The three main components of this system are NodeMcu, ultrasonic sensor and moisture sensor. The ultrasonic sensor is used to determine if the waste bin is full or not. If the bin is full a flash message is send to the user. The motion sensor detects whenever waste is deposited in the bin and passes this information to the NodeMcu board. The NodeMcu is used to link all the information collected from the ultrasonic sensor to the app.
 
 ### 2. Web-Interface System-
-The web interface system is regarding the app that keeps the authorities informed on the status of the trash bin. The user can use the app and will be given access to the app once the device ID of the user is registered in the app. The information collected from the sensors are linked to the app with the help of NodeMcu. The user can login to the app to check the status of the trash bin. The authority-user interface deals with the interaction of user and authority. When the waste overflows the bin, an alert message is received by the authorities and they can come and collect the waste from the waste bin.
+The web interface system is regarding the app that keeps the authorities informed on the status of the trash bin. The user can use the app and will be given access to the app once the device ID of the user is registered in the app. The information collected from the sensors are linked to the app with the help of the NodeMcu board. The user can login to the app to check the status of the trash bin. The authority-user interface deals with the interaction of user and authority. When the waste overflows the bin, an alert message is received by the authorities which allows them to collect the waste and clear the trash bins.
 
 ## Description-
 ### 1. Node MCU-
@@ -91,4 +92,4 @@ Connections are based on the analog mode of the moisture sensor. The Connections
 Please refer to the code and make appropriate changes to your circuit and also check out the [blink app documentation](https://docs.blynk.cc/) to set up the mobile interface for the above project 
 
 ## Conclusion
-A proper waste management system is important for the development of any country. For a populated country like India, waste management is an important concern. We are trying to give an effective solution to the waste management issue through this project.
+A proper waste management system is important for the development of any country. For a populated country like India, waste management is an issue of importance. We are trying to give an effective solution to the waste management problem through this project.
